@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Button"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:paddingBottom="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnColorSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COLORED SELECTOR"
+            android:background="@drawable/selector_colored" />
+
+        <Button
+            android:id="@+id/btnDisabledSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COLOR SELECTOR DISABLED"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:background="@drawable/selector_colored" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:src="@drawable/emoji"
+            android:background="@drawable/selector_yellow"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:src="@drawable/emoji"
+            android:background="@drawable/selector_blue"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROUND SHAPE"
+            android:id="@+id/btnRoundShape"
+            android:background="@drawable/shape_round" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHAPE WITH GRADIENT"
+            android:id="@+id/btnShapeGradient"
+            android:background="@drawable/shape_gradient" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECTOR SHAPE"
+            android:id="@+id/btnSelectorShape"
+            android:background="@drawable/selector_shape" />
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:src="@drawable/emoji"
+            android:background="@drawable/selector_red"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+      </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+      <Button
+          android:id="@+id/btnShowToast"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Custom Toast"
+          android:background="@drawable/shape_round"
+          android:textStyle="bold"
+          android:textColor="#FFFFFF"
+          android:padding="10dp"/>
+
+      <Button
+          android:id="@+id/btnShowDialog"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Custom Dialog"
+          android:background="@drawable/shape_gradient"
+          android:textStyle="bold"
+          android:textColor="#FFFFFF"
+          android:layout_marginLeft="20dp"
+          android:padding="10dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnNextPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trang tiếp theo"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF" />
+
+  </LinearLayout>
+</ScrollView>
